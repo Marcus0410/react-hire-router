@@ -8,6 +8,7 @@ function HireForm(props) {
 
     function handleSubmit(event) {
         event.preventDefault()
+        person.wage = wage
         setHiredPeople([...hiredPeople, person])
         navigate("/")
     }
